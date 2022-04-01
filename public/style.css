@@ -2,8 +2,14 @@ body {
     background: #ABCDEF;
     font-family: Assistant, sans-serif;
     display: flex;
+    flex-direction: column;
     min-height: 90vh;
   }
+#gform {
+    display: flex;
+    justify-self: center;
+}
+
   .login {
     color: white;
     background: #136a8a;
