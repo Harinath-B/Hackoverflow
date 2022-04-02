@@ -1,6 +1,8 @@
 body {
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(bg1.webp);
+    color:aliceblue;
 }
 
 #top {
@@ -10,7 +12,7 @@ body {
 #bottom {
     display: flex;
     justify-content: space-between;
-    background-color: l;
+    margin: 50px;
 }
 
 #bottom #left {
@@ -21,6 +23,7 @@ body {
 #content {
     font-weight: bolder;
     margin-top: 75px;
+    font-size: larger;
 }
 
 #bottom #mid {
