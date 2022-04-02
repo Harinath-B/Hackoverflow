@@ -5,10 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classroom</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-    <frameset rows = "17%,*">
-    <frame src = "top.html" desc="top"/>
-    <frame src = "bottom.html" desc="down"/>
-    </frameset>
-
+<body>
+    <div id="top">
+        <center>
+            <img src="rec.jpg" height= "85px" width="85px" alt="Rajalakshmi Logo"/>
+        </center>
+        <center>
+            <h1><b>Rajalakshmi Engineering College</b></h1>
+            <h1><i>The World Needs You</i></h1>
+            <br>
+        </center>
+    </div>
+    <div id="bottom">
+        <div id="left">
+            <button>To Do</button><br><br>
+            <button>Completed Assignments</button><br><br>
+            <button>Done Late</button><br><br>
+            <button> No Due Dates</button><br><br>
+            <button>Updated Notes</button><br><br>
+            <button>Reecent Notifications</button>
+        </div>
+        <div id="mid">
+            <form>
+                <br>
+                <label for="Classes">Select subjects:</label>
+                <select name="Classes" id="Classes">
+                    <option value="default"></option>
+                    <option value="Web Development">Web development</option>
+                    <option value="Database management">Database Management</option>
+                    <option value="Operating System">Oerating System</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Optimizing Techniques for AI">Optimizing techniques for AI</option>
+                </select>
+                <br><br>
+                <center><input type="submit" value="Submit"></center>
+            </form>
+        <div id="content">
+            The selected classroom shall be displayed here
+        </div>
+        </div>
+        <div id="right">
+            <button>Web Development</button><br><br>
+            <button>Database Management</button><br><br>
+            <button>Operating System</button><br><br>
+            <button> Machine Learning</button><br><br>
+            <button>Optimizing Techniques for AI</button><br><br>
+        </div>
+    </div>
+</body>
 </html>
