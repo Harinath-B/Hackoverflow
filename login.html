@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PANINTERNS</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='index.html'>NAME</a>
+            </div>
+            <div style="margin-left: auto;">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text' class='input-field' id="email-login" placeholder='Email Id' required >
+		            <input type='password'class='input-field' id="pw-login" placeholder='Enter Password' required>
+		            <input type='checkbox'class='check-box'><span style="color: #e2dada;">Remember Password</span>
+		            <input type='submit' class='submit-btn' value="Login" >
+		        </form>
+		        <form id='register' class='input-group-register'>
+                    <input type='email' class='input-field' id="email-reg" placeholder='Email Id' required>
+                    <input type='password' class='input-field' id="pw-reg" placeholder='Password'  required>
+                    <input type='submit' class='submit-btn' id="agree" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB4HwkLtccbnS5-DQuxeLnzXbYjwjNtWGQ",
+          authDomain: "hackoverflow-f4abf.firebaseapp.com",
+          databaseURL: "https://hackoverflow-f4abf-default-rtdb.firebaseio.com",
+          projectId: "hackoverflow-f4abf",   
+          appId: "1:511454072760:web:1490669c2cadf5444d494d"
+      };
+      firebase.initializeApp(config);
+      
+      // make auth and firestore references
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+  
+      // update firestore settings
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+    <!-- Compiled and minified JavaScript -->
+    
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/index.js"></script>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+    <script src="scripts/index.js"></script>
+    <script type="module" src="scripts/auth.js"></script>
+</body>
+</html>
